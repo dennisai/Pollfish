@@ -1,0 +1,21 @@
+#Unity3D .gitignore file.
+# Store this file at the root of your local repository.
+
+.DS_Store
+/Temp
+/Build
+
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/XCode/
+/[Dd]atabase/
+
+*.csproj
+*.sln
+*.userprefs
+*.pidb
+*.booproj
+*.unityproj
+*.sublime-project
+*.sublime-workspace
