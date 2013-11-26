@@ -5,22 +5,18 @@ public class PollfishEventListener : MonoBehaviour
 {
 	public void OnEnable()
 	{
-		/*
 		Pollfish.surveyCompletedEvent += surveyCompleted;
 		Pollfish.surveyOpenedEvent += surveyOpened;
 		Pollfish.surveyClosedEvent += surveyClosed;
 		Pollfish.surveyReceivedEvent += surveyReceived;
-		*/
 	}
 
 	public void OnDisable()
 	{
-		/*
 		Pollfish.surveyCompletedEvent -= surveyCompleted;
 		Pollfish.surveyOpenedEvent -= surveyOpened;
 		Pollfish.surveyClosedEvent -= surveyClosed;
 		Pollfish.surveyReceivedEvent -= surveyReceived;
-		*/
 	}
 
 	public void surveyCompleted()
