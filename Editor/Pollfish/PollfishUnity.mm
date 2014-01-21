@@ -11,8 +11,8 @@ void UnitySendMessage(const char * className,const char * methodName, const char
 + (void)load
 {
     //Automatic actions that pollfish takes with the iOS client
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(createPollfish)
-        name:UIApplicationDidFinishLaunchingNotification object:nil];
+    //[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(createPollfish)
+    //    name:UIApplicationDidFinishLaunchingNotification object:nil];
 
    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(initializePollfish)
         name:UIApplicationDidBecomeActiveNotification object:nil];
@@ -36,13 +36,14 @@ void UnitySendMessage(const char * className,const char * methodName, const char
 }
 + (void)createPollfish:(NSNotification *)notification
 {
+    //Deprecated with latest sdk release
     [Pollfish createWithParentController:self.window.rootViewController andPosition: withPadding: andDeveloperKey:@"544d53ca-029a-47e2-8472-be253ae20280"];
 
 }
 + (void)initializePollfish:(NSNotification *)notification
 {
-
-    [Pollfish initialize];
+    NSLog(@"Pollfish initialied.");
+    [Pollfish initAtPosition:PollFishPositionTopRight withPadding:0 andDeveloperKey:@"544d53ca-029a-47e2-8472-be253ae20280" andDebuggable:true andCustomMode:false];;
 }
 + (void)destroyPollfish:(NSNotification *)notification
 {
