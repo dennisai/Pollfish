@@ -7,6 +7,8 @@ public class PollfishDemo : MonoBehaviour
 	{
 		if (GUI.Button(new Rect(10, 10, 620, 100), "Open Pollfish"))
 		{
+			Debug.Log("Open Pullfish Button pressed.");
+
 			Pollfish.ShowPollfish();
 		}
 

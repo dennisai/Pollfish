@@ -17,7 +17,7 @@ public class Pollfish : MonoBehaviour
 	public void Awake()
 	{
 #if UNITY_IPHONE
-		Pollfish.Initialize(DeveloperKey);
+		// Pollfish.Initialize(DeveloperKey);
 #endif
 	}
 
@@ -26,7 +26,7 @@ public class Pollfish : MonoBehaviour
 #if UNITY_IPHONE
 
 	#region API
-
+	/*
 	[DllImport ("__Internal")]
     private static extern void _Initialize(string developerKey);
 
@@ -38,6 +38,7 @@ public class Pollfish : MonoBehaviour
 			_Initialize(developerKey);
 		}
 	}
+	*/
 
 	[DllImport ("__Internal")]
     private static extern void _ShowPollfish();

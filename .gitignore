@@ -4,7 +4,8 @@
 .DS_Store
 /Temp
 /Build
-
+/testbuild/
+/testbuild2/
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
